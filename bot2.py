@@ -14,5 +14,13 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
 
+@bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
 
-bot.run("MTMzMDU5Njk0NjgxMjg2NjYzMw.GaqcjJ.NVWEKR1ikHjE1YgBSbF8MLb6Np3eAK7oIQESGo")
+@bot.command()
+async def add(ctx, left: int, right: int):
+    """Adds two numbers together."""
+    await ctx.send(left + right)
+
+bot.run("")
